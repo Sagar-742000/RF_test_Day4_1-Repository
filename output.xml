@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.3 on win32)" generated="2026-03-27T11:54:36.099588" rpa="false" schemaversion="5">
+<suite id="s1" name="Test4" source="C:\Users\ysagarba\PycharmProjects\PythonProject1\PythonProject\RF_test_Day4_1\Test Cases\Test4.robot">
+<test id="s1-t1" name="This is my first UI test case." line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T11:54:36.774891" level="INFO">we are inside the test case..</msg>
+<arg>we are inside the test case..</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T11:54:36.774261" elapsed="0.000771"/>
+</kw>
+<kw name="Launch Application" owner="UserDefinedLibraries">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T11:54:36.777100" level="INFO">This is keyword to launch application..</msg>
+<arg>This is keyword to launch application..</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T11:54:36.776662" elapsed="0.000580"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T11:54:36.777817" level="INFO">Opening browser 'chrome' to base url 'http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T11:54:36.777488" elapsed="6.016633"/>
+</kw>
+<arg>http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx</arg>
+<status status="PASS" start="2026-03-27T11:54:36.775903" elapsed="6.018519"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-27T11:54:42.796495" level="INFO">Typing text 'Tester' into text field 'id=ctl00_MainContent_username'.</msg>
+<arg>id=ctl00_MainContent_username</arg>
+<arg>Tester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T11:54:42.795483" elapsed="0.177699"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-03-27T11:54:42.974838" level="INFO">Typing text 'test' into text field 'id=ctl00_MainContent_password'.</msg>
+<arg>id=ctl00_MainContent_password</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T11:54:42.974208" elapsed="0.161952"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-27T11:54:43.137473" level="INFO">Clicking button 'ctl00_MainContent_login_button'.</msg>
+<arg>ctl00_MainContent_login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T11:54:43.137114" elapsed="20.688389"/>
+</kw>
+<kw name="Steps for test teardown" owner="UserDefinedLibraries" type="TEARDOWN">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T11:55:03.829161" level="INFO">This is keyword for test teardown..</msg>
+<arg>This is keyword for test teardown..</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T11:55:03.828368" elapsed="0.000948"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T11:55:03.829777" elapsed="2.764705"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-27T11:55:06.595539" level="INFO">Browser closed successfully..</msg>
+<arg>Browser closed successfully..</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-27T11:55:06.594809" elapsed="0.000861"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:55:03.827342" elapsed="2.768483"/>
+</kw>
+<status status="PASS" start="2026-03-27T11:54:36.772293" elapsed="29.824182"/>
+</test>
+<status status="PASS" start="2026-03-27T11:54:36.105207" elapsed="30.493703"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test4" id="s1" pass="1" fail="0" skip="0">Test4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
